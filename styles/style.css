@@ -12,11 +12,13 @@
 
 }
 
+
 /* common styles */
 .bg-linear {
-    background-image: linear-gradient(to bottom, #111111, #282828, #414141, #5b5b5b, #777777);
+    background-image: linear-gradient(to top, #111111, #282828, #414141, #5b5b5b, #777777);
 
 }
+
 
 
 /* nav-styles */
@@ -72,7 +74,7 @@
 
 .banner-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     max-width: 1440px;
     margin-top: 30px;
 }
@@ -166,6 +168,48 @@
     position: relative;
     width: max-content;
 }
+/* habits section */
+.title-container{
+   
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+   
+}
+.habits_title{
+    font-weight: 900;
+    font-size: 3rem;
+    color: rgba(255, 255, 255, 1);
+    
+}
+.habits-cards{
+    display: flex;
+    gap: 40px;
+    
+}
+.card{
+    margin: 0 auto;
+    text-align: center;
+    gap: 30px;
+}
+.card p{
+    font-weight: 400;
+    font-size:0.875rem ;
+    color: rgba(255, 255, 255, 0.5);
+   
+}
+.card h2{
+    margin: 0;
+    font-weight: 600;
+    font-size: 1.125rem;   
+    color: rgba(255, 255, 255, 1); 
+}
+
+.card img{
+    border-radius: 50%;
+    width: 180px;
+    border: 4px solid rgba(255, 255, 255, 0.1);
+}
 
 
 @media screen and (max-width: 576px) {
@@ -209,8 +253,11 @@
 
     .btn_2 {
         margin-top: -100px;
-        margin-right: 70px;
+        margin-right: 60px;
         width: 165px;
 
+    }
+    .habits-cards{
+        flex-direction: column;
     }
 }
