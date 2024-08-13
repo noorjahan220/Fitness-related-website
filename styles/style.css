@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+.inter {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* common styles */
+.bg-linear {
+    background-image: linear-gradient(to right top, #111111, #282828, #414141, #5b5b5b, #777777);
+}
+
+
+/* nav-styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1060px;
+}
+
+.brand-name {
+    font-weight: 900;
+    font-size: 2.25rem;
+    color: rgba(230, 83, 60, 1);
+    margin: 0px 0px 0px 60px;
+
+
+}
+
+#links {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 4px 4px;
+    border-radius: 39px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 47px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-size: 1.125rem;
+    color: #ffff;
+    transition: 0.2s;
+}
+
+.nav-links a:hover {
+    background-color: rgba(230, 83, 60, 1);
+    padding: 8px 20px;
+    border-radius: 46px;
+
+}
+
+.toggle-btn {
+
+    display: none;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 576px) {
+    .toggle-btn {
+        display: block;
+        padding: 20px;
+    }
+
+    #links {
+        display: none;
+    }
+    .brand-name{
+        margin-left: 20px;
+    }
+}
