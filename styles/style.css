@@ -6,10 +6,14 @@
     font-weight: 400;
     font-style: normal;
 }
+#font-family{
+    font-family: 'Miama', sans-serif;
+                                                
+} 
 
 /* common styles */
 .bg-linear {
-    background-image: linear-gradient(to right top, #111111, #282828, #414141, #5b5b5b, #777777);
+    background-image: linear-gradient(to bottom, #111111, #282828, #414141, #5b5b5b, #777777);
 }
 
 
@@ -18,14 +22,14 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1060px;
+    max-width: 1440px;
 }
 
 .brand-name {
     font-weight: 900;
     font-size: 2.25rem;
     color: rgba(230, 83, 60, 1);
-    margin: 0px 0px 0px 60px;
+    margin: 0px 0px 0px 30px;
 
 
 }
@@ -57,10 +61,95 @@
 }
 
 .toggle-btn {
-
     display: none;
-    cursor: pointer;
+
 }
+/* banner */
+
+.banner-container{
+    display: flex;
+    justify-content: space-around;
+    max-width: 1440px;
+    margin-top: 30px;
+}
+.banner-title{
+    font-weight: 900;
+    font-size: 4.875rem;
+    color: white;
+    margin: 0px;
+    padding: 20px;
+    max-width: 1440px;
+}
+.btn_container{
+    display: flex;
+    gap: 10px;
+    margin: 15px;
+}
+.btn_container button{
+    width: 224px; 
+    padding: 16px 40px;
+    border-radius: 42px;
+    border: 1px solid rgba(255, 255, 255, 1);
+    background-color: transparent;
+    color: #ffff;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.btn_container button:hover{
+    background-color: rgba(230, 83, 60, 1);
+}
+
+.transparent-btn  {
+    display: flex;
+}
+.btn_1{
+    width: 206px;
+    height: 96px;
+    border-radius: 12px;
+    background-color: rgba(48, 48, 48, 0.54);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+   display: flex;
+   align-items: center;
+   backdrop-filter: blur(100px);
+   justify-content: center;
+   margin-top: -150px;
+   margin-left: -110px;
+   opacity: 0.8;
+}
+.circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+    background-color: rgba(230, 83, 60, 1);
+}
+.btn-text{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.btn_2{
+    backdrop-filter: blur(100px);
+    opacity: 0.8;
+    width: 193px;
+    height: 98px;
+    border-radius: 12px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 30px;
+    margin-top: -400px;
+   margin-right: -900px;
+   
+   
+}
+                                                
 
 @media screen and (max-width: 576px) {
     .toggle-btn {
@@ -71,7 +160,14 @@
     #links {
         display: none;
     }
-    .brand-name{
+
+    .brand-name {
         margin-left: 20px;
+    }
+    .banner-container{
+        flex-direction: column;
+    }
+    .img-section, .text-section{
+        margin: 0 auto;
     }
 }
