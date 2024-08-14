@@ -364,6 +364,40 @@ td {
 
 }
 
+/* team section */
+
+.team-img{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    align-items: center;
+    width: 1060px;
+}
+.profile-card {
+    position: relative;
+    overflow: hidden;
+    
+}
+
+.profile-card img {
+    border-radius: 10px;
+    display: block;
+}
+
+.profile-info {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: white;
+}
+.profile-info h2 {
+    margin: 0;
+    font-size: 24px;
+}
+.profile-info p {
+    margin: 0;
+    font-size: 16px;
+}
 
 
 
@@ -448,5 +482,15 @@ td {
     input {
         width: 100%;
         box-sizing: border-box;
+    }
+    .team-img{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+        width: auto;
+        justify-items: center;
+    }
+    .profile-card img{
+        width: 100%;
     }
 }
