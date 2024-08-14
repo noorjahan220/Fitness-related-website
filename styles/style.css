@@ -21,6 +21,7 @@
 
 
 
+
 /* nav-styles */
 .navbar {
     display: flex;
@@ -81,7 +82,7 @@
 
 .banner-title {
     font-weight: 900;
-    font-size: 4.875rem;
+    font-size: 3.5rem;
     color: white;
     margin: 0px;
     padding: 20px;
@@ -101,7 +102,7 @@
     border: 1px solid rgba(255, 255, 255, 1);
     background-color: transparent;
     color: #ffff;
-    font-size: 1rem;
+    font-size: 0.8rem;
     font-weight: 600;
     cursor: pointer;
     transition: 0.2s;
@@ -156,9 +157,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    padding-left: 30px;
+    padding-left: 20px;
     top: 20%;
-    right: -2px;
+    right: -1px;
     position: absolute;
 
 }
@@ -175,18 +176,21 @@
     text-align: center;
     padding: 20px;
 
+
 }
 
 .habits_title {
     font-weight: 900;
-    font-size: 3rem;
+    font-size: 2rem;
     color: rgba(255, 255, 255, 1);
 
 }
 
 .habits-cards {
-    display: flex;
-    gap: 40px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0px;
+
 
 }
 
@@ -206,7 +210,7 @@
 .card h2 {
     margin: 0;
     font-weight: 600;
-    font-size: 1.125rem;
+    font-size: 0.8rem;
     color: rgba(255, 255, 255, 1);
 }
 
@@ -220,15 +224,15 @@
 .extra-mile {
     display: flex;
     justify-content: center;
-    gap: 165px;
     width: 1060px;
     background-color: rgba(34, 34, 34, 1);
-    margin: 30px;
+    margin: 0 auto;
+    gap: 50px;
 
 }
 
 .text-container {
-    margin-left: 30px;
+    margin-left: 40px;
     margin-top: 30px;
 }
 
@@ -238,7 +242,7 @@
     border: 1px solid rgba(255, 255, 255, 1);
     background-color: rgba(230, 83, 60, 1);
     color: #ffff;
-    font-size: 1rem;
+    font-size: 0.8rem;
     font-weight: 600;
     cursor: pointer;
 
@@ -246,10 +250,121 @@
 
 .img-container {
     margin: 30px;
+}
 
+/* bmi calculetor */
+
+.bmi-heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.div {
+    text-align: center;
+}
+
+
+
+.table {
+    display: block;
+    padding: 20px;
 
 
 }
+
+.table-title {
+    margin-bottom: 20px;
+}
+
+.calc-text {
+    margin: 10px;
+}
+
+.input-btn {
+    width: 150px;
+    gap: 10px;
+    padding: 16px 30px;
+    border-radius: 42px;
+    background-color: rgba(230, 83, 60, 1);
+    color: rgba(255, 255, 255, 1);
+    font-weight: 700;
+    font-size: 0.8rem;
+}
+
+
+table {
+    border-collapse: collapse;
+
+}
+
+td,
+th {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    text-align: start;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.80rem;
+
+}
+
+td {
+    font-size: 0.88rem;
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: 400;
+}
+
+
+
+
+.clac-section input {
+    border-radius: 8px;
+    padding: 13px 10px 13px 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+
+}
+
+.calc-sec {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: rgba(34, 34, 34, 1);
+    align-items: center;
+    justify-items: center;
+}
+
+.calculator {
+    margin-right: 100px;
+}
+
+
+.height {
+    grid-area: height;
+}
+
+.weight {
+    grid-area: weight;
+}
+
+.age {
+    grid-area: age;
+}
+
+.select {
+    grid-area: select;
+}
+
+.clac-section {
+    display: grid;
+    grid-template-areas:
+        "height  weight  "
+        "age  sex "
+        "select select ";
+    gap: 10px;
+
+}
+
+
 
 
 @media screen and (max-width: 576px) {
@@ -278,7 +393,7 @@
     }
 
     .banner-title {
-        padding: 0;
+        padding: 10px;
     }
 
     .img-section,
@@ -298,7 +413,10 @@
 
     }
 
-    .habits-cards,
+    .habits-cards {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
     .extra-mile {
         flex-direction: column;
     }
@@ -313,6 +431,22 @@
     }
 
     .extra-mile {
-        gap: 40px;
+        gap: 5px;
+    }
+
+    .btn-text-container {
+        margin: 0 auto;
+    }
+
+    .calc-sec {
+
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: start;
+
+    }
+
+    input {
+        width: 100%;
+        box-sizing: border-box;
     }
 }
