@@ -366,17 +366,18 @@ td {
 
 /* team section */
 
-.team-img{
+.team-img {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     align-items: center;
     width: 1060px;
 }
+
 .profile-card {
     position: relative;
     overflow: hidden;
-    
+
 }
 
 .profile-card img {
@@ -390,13 +391,32 @@ td {
     left: 10px;
     color: white;
 }
+
 .profile-info h2 {
     margin: 0;
     font-size: 24px;
 }
+
 .profile-info p {
     margin: 0;
     font-size: 16px;
+}
+
+.team-title {
+    text-align: center;
+}
+
+.main-section {
+    margin: 0 auto;
+}
+
+.text {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-items: center;
+
+
 }
 
 
@@ -483,14 +503,41 @@ td {
         width: 100%;
         box-sizing: border-box;
     }
-    .team-img{
+
+    .team-img {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         gap: 20px;
         width: auto;
         justify-items: center;
     }
-    .profile-card img{
+
+    .profile-card img {
         width: 100%;
+    }
+
+    .text {
+        grid-template-columns: repeat(1, 1fr);
+        margin: 0 auto;
+        justify-items: start;
+
+    }
+
+    .fit-title {
+        margin: 0;
+    }
+
+    .two {
+        margin-top: 0;
+        margin-left: 0;
+    }
+
+    .one {
+        margin-top: 0;
+        margin-right: 0;
+    }
+
+    hr {
+        margin: 0;
     }
 }
