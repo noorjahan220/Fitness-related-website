@@ -9,18 +9,13 @@
 
 #font-family {
     font-family: 'Miama', sans-serif;
-
 }
 
 
 /* common styles */
 .bg-linear {
     background-image: linear-gradient(to top, #111111, #282828, #414141, #5b5b5b, #777777);
-
 }
-
-
-
 
 /* nav-styles */
 .navbar {
@@ -35,8 +30,6 @@
     font-size: 2.25rem;
     color: rgba(230, 83, 60, 1);
     margin: 0px 0px 0px 90px;
-
-
 }
 
 #links {
@@ -68,15 +61,12 @@
 
 .toggle-btn {
     display: none;
-
 }
 
 /* banner */
-
 .banner-container {
     display: flex;
     justify-content: space-between;
-
     margin-top: 30px;
 }
 
@@ -86,7 +76,6 @@
     color: white;
     margin: 0px;
     padding: 20px;
-
 }
 
 .btn_container {
@@ -96,7 +85,6 @@
 }
 
 .btn_container button {
-
     padding: 16px 40px;
     border-radius: 42px;
     border: 1px solid rgba(255, 255, 255, 1);
@@ -114,7 +102,6 @@
 
 .transparent-btn {
     display: flex;
-
 }
 
 .btn_1 {
@@ -166,32 +153,25 @@
 
 .img-section {
     position: relative;
-
 }
 
 /* habits section */
 .title-container {
-
     margin: 0 auto;
     text-align: center;
     padding: 20px;
-
-
 }
 
 .habits_title {
     font-weight: 900;
     font-size: 2rem;
     color: rgba(255, 255, 255, 1);
-
 }
 
 .habits-cards {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 0px;
-
-
 }
 
 .card {
@@ -204,7 +184,6 @@
     font-weight: 400;
     font-size: 0.875rem;
     color: rgba(255, 255, 255, 0.5);
-
 }
 
 .card h2 {
@@ -264,8 +243,6 @@
 .div {
     text-align: center;
 }
-
-
 
 .table {
     display: block;
@@ -419,6 +396,105 @@ td {
 
 }
 
+.pricing-card {
+    width: 300px;
+    background-color: rgba(34, 34, 34, 1);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+
+}
+
+.pricing-header {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.pricing-header h2 {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 1);
+    margin: 0;
+    font-weight: 400;
+}
+
+.price {
+    font-size: 2rem;
+    font-weight: 900;
+    margin: 10px 0;
+    color: rgba(255, 255, 255, 1);
+}
+
+.price span {
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.description {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.80rem;
+    margin: 10px 0;
+}
+
+.features {
+    text-align: left;
+    margin-top: 20px;
+}
+
+.features li {
+    margin-bottom: 10px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.70rem;
+}
+
+.features li::before {
+    content: "✔";
+    color: rgba(230, 83, 60, 1);
+    margin-right: 10px;
+}
+
+.choose-plan {
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    text-align: center;
+    padding: 16px 0px;
+    border-radius: 42px;
+    border: 1px solid rgba(255, 255, 255, 1);
+    background-color: rgba(230, 83, 60, 1);
+    color: #ffff;
+    font-size: 0.8rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.card-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    gap: 20px;
+}
+
+.fit-title {
+    margin-left: 30px;
+}
+
+.fit-title h1 {
+    margin: 0;
+    font-size: 2.8rem;
+    font-weight: 900;
+    color: rgba(230, 83, 60, 1);
+}
+
+hr {
+    width: 80%;
+    border: 1px solid rgba(255, 255, 255, 0.191);
+}
+
 
 
 @media screen and (max-width: 576px) {
@@ -521,7 +597,9 @@ td {
         margin: 0 auto;
         justify-items: start;
 
+
     }
+
 
     .fit-title {
         margin: 0;
@@ -537,7 +615,14 @@ td {
         margin-right: 0;
     }
 
+
+    .card-section {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+    }
+
     hr {
-        margin: 0;
+        width: 100%;
     }
 }
